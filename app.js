@@ -245,7 +245,7 @@ Cards.forEach((item) => {
 });
 
 const card = document.querySelectorAll(".card");
-import { uiRender, obj } from "./product.js";
+// import { uiRender, obj } from "./product.js";
 card.forEach((item) => {
   item.addEventListener("click", () => {
     console.log(item);
