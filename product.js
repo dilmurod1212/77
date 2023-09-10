@@ -1,12 +1,12 @@
 const product = document.querySelector(".product");
 export let obj = null;
-uiRender({
-  image: "./images/card-img/Image(1).png",
-  address: "г. Самарканд",
-  price: "204 000 000",
-  title: "Chevrolet Onix 1.2 Turbo в наличии",
-  id: "1",
-});
+// uiRender({
+//   image: "./images/card-img/Image(1).png",
+//   address: "г. Самарканд",
+//   price: "204 000 000",
+//   title: "Chevrolet Onix 1.2 Turbo в наличии",
+//   id: "1",
+// });
 // console.log(product);
 // function uiRender(item) {
 //   console.log(item);
@@ -36,4 +36,4 @@ uiRender({
 //     : product;
 // }
 
-export { uiRender };
+// export { uiRender };

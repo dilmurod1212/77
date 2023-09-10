@@ -221,7 +221,7 @@ category.forEach((item) => {
 const cardItems = document.querySelector(".card-items");
 Cards.forEach((item) => {
   cardItems.innerHTML += `
-  <div class="card bg-white rounded-lg shadow overflow-hidden">
+  <div class="card bg-white rounded-lg shadow overflow-hidden cursor-pointer">
   <img src="${item.image}" alt="" class="w-full object-cover" />
   <div class="content p-4">
     <span class="py-1 px-2 bg-gray-200 rounded-lg text-xs my-4">${item.address}</span>
