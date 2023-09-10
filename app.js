@@ -218,38 +218,6 @@ category.forEach((item) => {
   `;
 });
 
-const card = document.querySelectorAll(".card");
-// import { uiRender, obj } from "./product.js";
-card.forEach((item) => {
-  item.addEventListener("click", () => {
-    console.log(item);
-    document.location.assign("./product.html");
-  });
-});
-// const uiRender = (item) => {
-//   product.innerHTML += `
-//   <div
-
-//   class="category relative p-4 border border-gray-400 rounded-lg my-auto"
-// >
-//   <div>
-//     <img
-//       src="${item.image}"
-//       alt="male-icon"
-//       class="icon absolute rounded-lg flex items-center justify-center p-2 border border-gray-400 bg-[#F0F3F7] left-0 translate-x-[-50%] top-[50%] translate-y-[-50%]"
-//     />
-//   </div>
-//   <div class="flex justify-between items-center ">
-//     <div class="category__info pl-8">
-//       <h3 class="font-bold text-xl">${item.title}</h3>
-//       <p>${item.ad} объявлений</p>
-//     </div>
-//     <button><i class="fa-solid fa-angle-right"></i></button>
-//   </div>
-// </div>
-//   `;
-// };
-
 // modal
 const login = document.querySelector(".login");
 const modal = document.querySelector(".modal");
@@ -285,13 +253,13 @@ searchInput.addEventListener("keyup", (e) => {
     card.innerHTML = `<h1 class="text-2xl text-blue-400 w-[200%] font-bold">Bunday mahsulot mavjud emas😢</h1>`;
   }
 });
-
+import { uiRender } from "./product.js";
 function cardRender(arr) {
   const card = document.querySelector(".card-items");
   card.innerHTML = arr
     .map((item) => {
       return `
-    <div class="card bg-white rounded-lg shadow overflow-hidden cursor-pointer">
+    <div id="card" class="card bg-white rounded-lg shadow overflow-hidden cursor-pointer">
     <img src="${item.image}" alt="" class="w-full object-cover" />
     <div class="content p-4">
       <span class="py-1 px-2 bg-gray-200 rounded-lg text-xs my-4">${item.address}</span>
@@ -314,6 +282,14 @@ function cardRender(arr) {
     `;
     })
     .join("");
+  const cardItem = document.querySelectorAll("#card");
+  cardItem.forEach((item) => {
+    item.addEventListener("click", () => {
+      console.log(item);
+      document.location.assign("./product.html");
+      uiRender("hello");
+    });
+  });
+  console.log(cardItem);
 }
 cardRender(products);
-
