@@ -25,7 +25,7 @@
     <div
       class="overlay bg-[rgba(0,0,0,0.7)] backdrop-blur-md fixed top-0 left-0 bottom-0 right-0 z-10"
     ></div>
-    <div class="modal-content w-[400px] bg-white p-4 rounded-md z-20">
+    <div class="modal-content w-[400px] max-md:w-auto bg-white p-4 rounded-md z-20">
       <div class="modal-head">
         <div class="flex justify-between items-center">
           <h2 class="text-2xl font-bold">Добро пожаловать!</h2>
@@ -110,25 +110,7 @@
         </div>
       </div>
     </header>
-    <section class="search-panel">
-      <div
-        class="containerr flex max-md:gap-4 max-md:max-w[80%] justify-between items-center focus-within:border-blue-500 w-4/6 max-md:w-full m-auto p-4 max-md:p-2 mt-8 bg-gray-100 rounded-lg border border-gray-400"
-      >
-        <div class="flex items-center w-full x">
-          <i class="fas fa-search"></i>
-          <input
-            type="text"
-            placeholder="search panel"
-            class="max-md:text-xs w-full max-md:w-full px-4 py-2  bg-transparent border-none focus:outline-none focus:border-none focus:ring-offset-0 focus:ring-0"
-          />
-        </div>
-        <button
-          class="px-4 py-2 rounded-md text-white bg-black font-bold border focus:ring-2 focus:ring-slate-700 hover:bg-slate-700 transition-all max-md:text-xs"
-        >
-          Поиск
-        </button>
-      </div>
-    </section>
+    
     <section class="category">
       <div class="containerr max-md:max-w-[80%]">
         <div class="title text-center my-4">
@@ -160,6 +142,25 @@
         </div>
       </div>
     </section>
+    <section class="search-panel">
+      <div
+        class="containerr flex max-md:gap-4 max-md:max-w[80%] justify-between items-center focus-within:border-blue-500 w-4/6 max-md:w-full m-auto p-4 max-md:p-2 mt-8 bg-gray-100 rounded-lg border border-gray-400"
+      >
+        <div class="flex items-center w-full x">
+          <i class="fas fa-search"></i>
+          <input
+            type="search"
+            placeholder="search panel"
+            class="search-input max-md:text-xs w-full max-md:w-full px-4 py-2  bg-transparent border-none focus:outline-none focus:border-none focus:ring-offset-0 focus:ring-0"
+          />
+        </div>
+        <button
+          class="px-4 py-2 rounded-md text-white bg-black font-bold border focus:ring-2 focus:ring-slate-700 hover:bg-slate-700 transition-all max-md:text-xs"
+        >
+          Поиск
+        </button>
+      </div>
+    </section>
     <section class="cards my-4">
       <div class="containerr">
         <div class="title text-center my-4">
@@ -170,7 +171,7 @@
         </div>
         
         <div class="card-items grid grid-cols-4 gap-3 max-md:grid-cols-2">
-          
+          <div class="root"></div>
         </div>
       </div>
     </section>
