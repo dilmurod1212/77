@@ -1,6 +1,5 @@
 import Cards from "./constants/cards.js";
 const products = Cards;
-console.log(products);
 const product = document.querySelector(".card");
 
 function uiRender(id) {

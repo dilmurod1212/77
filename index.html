@@ -19,6 +19,11 @@
     </style>
   </head>
   <body>
+   
+
+    <div>
+      
+    </div>
     <div
     class="modal fixed z-30 w-full min-h-screen h-full flex justify-center items-center hidden"
   >
@@ -65,12 +70,13 @@
         <p class="text-center my-2">Хотите стать продавцом?</p>
         <button
           type="button"
-          class="w-full p-2 rounded-md border-2 border-[#388FF3] text-[#388FF3] font-bold"
+          class="w-full p-2 rounded-md border-2 border-[#388FF3] text-[#388FF3] font-bold order-btn"
         >
           Подать заявку
         </button>
       </form>
     </div>
+    
   </div>
     <header class="header bg-white">
       <div class="containerr">
@@ -111,7 +117,7 @@
       </div>
     </header>
     
-    <section class="category">
+    <section class="my-2">
       <div class="containerr max-md:max-w-[80%]">
         <div class="title text-center my-4">
           <h2 class="text-3xl font-bold">Категории</h2>
@@ -120,25 +126,7 @@
           </p>
         </div>
         <div class="categories  grid grid-cols-3 max-md:grid-cols-1 gap-10">
-          <!-- <div
-            
-            class="category relative p-4 border border-gray-400 rounded-lg"
-          >
-            <div>
-              <img
-                src="@/assets/images/category-icons/Component1(20).svg"
-                alt="male-icon"
-                class="icon absolute rounded-lg flex items-center justify-center p-2 border border-gray-400 bg-white left-0 translate-x-[-50%] top-[50%] translate-y-[-50%]"
-              />
-            </div>
-            <div class="flex justify-between items-center">
-              <div class="category__info pl-8">
-                <h3 class="font-bold text-xl">{{ el.title }}</h3>
-                <p>{{ el.ad }} объявлений</p>
-              </div>
-              <button><i class="fas fa-arrow-right"></i></button>
-            </div>
-          </div> -->
+
         </div>
       </div>
     </section>
@@ -155,7 +143,7 @@
           />
         </div>
         <button
-          class="px-4 py-2 rounded-md text-white bg-black font-bold border focus:ring-2 focus:ring-slate-700 hover:bg-slate-700 transition-all max-md:text-xs"
+          class="px-4 py-2 rounded-md text-white bg-black font-bold border focus:ring-2 focus:ring-slate-700 hover:bg-slate-700 transition-all max-md:text-xs search-btn"
         >
           Поиск
         </button>
@@ -216,6 +204,8 @@
         </div>
       </div>
     </footer>
+
+   
     <!-- <script src="product.js"></script> -->
     <script src="dropdown.js"></script>
 

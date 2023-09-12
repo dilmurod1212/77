@@ -11,6 +11,7 @@ body {
   background-color: #f0f3f7;
   font-family: "Inter", sans-serif !important;
 }
+
 .dropdown {
   position: relative;
 }
@@ -20,11 +21,10 @@ body {
   align-items: center;
   gap: 20px;
   padding: 8px 16px;
-  border: 1px solid transparent;
   cursor: pointer;
   border-radius: 6px;
   transition: all 0.3s;
-  border: 1px solid rgba(7, 31, 73, 0.863);
+  border: 1px solid #eaedf0;
 }
 .select:hover {
   background-color: #f0f3f7;
@@ -70,6 +70,10 @@ body {
 .menu .active {
   background-color: #f0f3f7;
 }
+.icon-group .active {
+  color: rgb(46, 61, 234) !important;
+}
+
 @media (max-width: 768px) {
   .containerr {
     max-width: 90%;
