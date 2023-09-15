@@ -44,10 +44,11 @@ const orderModal = document.querySelector(".modal-order");
 login.addEventListener("click", showModal);
 closeBtn.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
-orderBtn.addEventListener("click", () => {
-  logModal.classList.add("hidden");
-  orderModal.classList.remove("hidden");
-});
+// orderBtn.addEventListener("click", () => {
+//   logModal.classList.add("hidden");
+//   orderModal.classList.remove("hidden");
+// });
+console.log(orderBtn);
 
 function showModal() {
   modal.classList.remove("hidden");

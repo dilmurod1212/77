@@ -8,6 +8,7 @@ const modalBtn = modal.querySelector(".modal-btn");
 const loginInput = modal.querySelector("#login-input");
 const passwordInput = modal.querySelector("#password-input");
 const errorText = modal.querySelector(".error");
+const left = modal.querySelector(".left");
 const closeBtn = document.querySelector(".fa-close");
 const overlay = document.querySelector(".overlay");
 
@@ -34,8 +35,8 @@ form.addEventListener("submit", (e) => {
     })
     .catch((err) => console.log(err));
 });
-
-document.querySelector(".left").addEventListener("click", () => {
+console.log(left);
+left.addEventListener("click", () => {
   localStorage.clear();
   window.location.assign("./index.html");
 });
