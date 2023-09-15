@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 .containerr {
-  max-width: 1140px;
+  max-width: 90%;
   margin: 0 auto;
 }
 body {
@@ -71,7 +71,7 @@ body {
   background-color: #f0f3f7;
 }
 .icon-group .active {
-  color: rgb(46, 61, 234) !important;
+  color: #388ff3 !important;
 }
 
 @media (max-width: 768px) {

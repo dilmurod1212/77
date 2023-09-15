@@ -5,35 +5,20 @@ const category = categoryData;
 const categories = document.querySelector(".categories");
 category.forEach((item) => {
   categories.innerHTML += `
-  <div class="relative category">
-            <div          
-              class="  p-4 border border-[
-                #EAEDF0] shadow-md hover:shadow-lg hover:cursor-pointer  transition-all rounded-lg my-auto"
-            >
-                <img
-                src="${item.image}"
-                alt="male-icon"
-                class="icon absolute rounded-lg flex items-center justify-center p-2 border border-[
-                  #EAEDF0] bg-[#F0F3F7] shadow-md left-0 translate-x-[-50%] top-[50%] translate-y-[-50%]"
-              />
-              <div class="flex justify-between items-center ">
-                <div class="category__info pl-8">
-                  <h3 class="font-bold text-xl">${item.title}</h3>
-                  <p>${item.ad} объявлений</p>
-                </div>
-                <button><i class="fa-solid fa-angle-right"></i></button>
-              </div>
-            </div>
-            <ul class="absolute w-[100%]  bg-red-300 containerr my-8 grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-8 p-4 border border-[#EAEDF0] rounded-md category-dropdown hidden">
-            <li class="flex justify-between cursor-pointer items-center"><span>Смартфоны</span><i class="fa-solid fa-angle-right"></i></li>
-            <li class="flex justify-between cursor-pointer items-center "><span>Фитнес браслеты</span><i class="fa-solid fa-angle-right"></i></li>
-            <li class="flex justify-between cursor-pointer items-center "><span>Аксессуары для смартфонов и телефонов</span><i class="fa-solid fa-angle-right"></i></li>
-            <li class="flex justify-between cursor-pointer items-center "><span>Смарт-часы</span><i class="fa-solid fa-angle-right"></i></li>
-            <li class="flex justify-between cursor-pointer items-center "><span>Запчасти для смартфонов</span><i class="fa-solid fa-angle-right"></i></li>
-            <li class="flex justify-between cursor-pointer items-center "><span>Ремешки для часов и смарт-часов</span><i class="fa-solid fa-angle-right"></i></li>
-            <li class="flex justify-between cursor-pointer items-center "><span>Аксессуары для смартфонов и телефонов</span><i class="fa-solid fa-angle-right"></i></li>      
-            </ul>
-          </div>
+  <div class="relative category  border border-[#EAEDF0] shadow-md hover:shadow-lg hover:cursor-pointer  transition-all rounded-lg flex justify-between items-center p-4 ">
+  <img
+  src="${item.image}"
+  alt="male-icon"
+  class="icon absolute rounded-lg flex items-center justify-center p-2 border border-[
+    #EAEDF0] bg-[#F0F3F7] shadow-md left-0 translate-x-[-50%] top-[50%] translate-y-[-50%]"
+/>
+  <div class="category__info pl-8">
+    <h3 class="font-bold text-xl">${item.title}</h3>
+    <p>${item.ad} объявлений</p>
+  </div>
+  <button><i class="fa-solid fa-angle-right"></i></button>
+
+</div>
   `;
 });
 const categoryDropdown = document.querySelectorAll(".category-dropdown");

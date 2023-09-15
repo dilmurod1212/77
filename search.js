@@ -2,9 +2,28 @@ import Cards from "./constants/cards.js";
 let products = [...new Set(Cards.map((item) => item))];
 const card = document.querySelector(".cards");
 const cardLength = document.querySelector(".card-length");
-cardLength.textContent = `Мы нашли ${products.length} объявлений`;
 const listIcon = document.querySelector(".list-icon");
 const gridIcon = document.querySelector(".grid-icon");
+cardLength.textContent = `Мы нашли ${products.length} объявлений`;
+
+const regions = document.querySelectorAll(".region-filter li");
+regions.forEach((region) => {
+  region.addEventListener("click", (e) => {
+    products = [...new Set(Cards.map((item) => item))];
+    const address = e.target.dataset.address;
+    const filtredArr = products.filter(
+      (item) => item.address.toLowerCase() == address.toLowerCase()
+    );
+    if (filtredArr.length) {
+      renderFunc(filtredArr);
+      products = filtredArr
+      cardLength.textContent = `Мы нашли ${filtredArr.length} объявлений`;
+    } else {
+      renderFunc(products);
+      cardLength.textContent = `Мы нашли ${products.length} объявлений`;
+    }
+  });
+});
 
 listIcon.addEventListener("click", () => {
   gridIcon.classList.remove("active");
@@ -19,10 +38,12 @@ gridIcon.addEventListener("click", () => {
   console.log("grid click");
   gridRender(products);
 });
-if (listIcon.classList.contains("active")) {
-  listRender(products);
-} else {
-  gridRender(products);
+function renderFunc(products) {
+  if (listIcon.classList.contains("active")) {
+    listRender(products);
+  } else {
+    gridRender(products);
+  }
 }
 function gridRender(arr) {
   card.classList.add("grid-cols-3");
@@ -131,3 +152,4 @@ function listRender(arr) {
   });
 }
 // cardRender(products);
+renderFunc(products);

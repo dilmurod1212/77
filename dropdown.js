@@ -2,7 +2,6 @@ const dropdown = document.querySelectorAll(".dropdown"),
   selected = document.querySelector(".selected"),
   btn = document.querySelector(".caret i");
 
-console.log(dropdown);
 dropdown.forEach((item) => {
   const select = item.querySelector(".select");
   const menu = item.querySelector(".menu");
