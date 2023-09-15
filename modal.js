@@ -1,4 +1,5 @@
 // import axios from "axios";
+
 // modal
 const login = document.querySelector(".login");
 const modal = document.querySelector(".modal");
@@ -6,6 +7,7 @@ const form = modal.querySelector("form");
 const modalBtn = modal.querySelector(".modal-btn");
 const loginInput = modal.querySelector("#login-input");
 const passwordInput = modal.querySelector("#password-input");
+const errorText = modal.querySelector(".error");
 const closeBtn = document.querySelector(".fa-close");
 const overlay = document.querySelector(".overlay");
 
@@ -19,18 +21,24 @@ form.addEventListener("submit", (e) => {
   getData(formVal)
     .then((response) => response.json())
     .then((json) => {
-      if (json.access_token) {
+      if (json.access_token && errorText.classList.contains("hidden")) {
         localStorage.setItem("token", json.access_token);
+        window.location.assign("./admin.html");
       } else {
-        alert("xatolik");
+        // alert("xatolik");
+        errorText.classList.remove("hidden");
+        setTimeout(() => {
+          errorText.classList.add("hidden");
+        }, 3000);
       }
-      localStorage.getItem("token")
-        ? window.location.assign("./admin.html")
-        : window.location.assign("./index.html");
     })
     .catch((err) => console.log(err));
 });
 
+document.querySelector(".left").addEventListener("click", () => {
+  localStorage.clear();
+  window.location.assign("./index.html");
+});
 async function getData(data) {
   console.log(data);
 
