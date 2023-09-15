@@ -48,7 +48,6 @@ overlay.addEventListener("click", closeModal);
 //   logModal.classList.add("hidden");
 //   orderModal.classList.remove("hidden");
 // });
-console.log(orderBtn);
 
 function showModal() {
   modal.classList.remove("hidden");
@@ -66,7 +65,7 @@ searchBtn.addEventListener("click", () => {
 });
 const products = [...new Set(Cards.map((item) => item))];
 
-products.push({ title: "malibu", price: "420 000 000" });
+products.push({ title: "malibu", price: "420 000" });
 
 const searchInput = document.querySelector(".search-input");
 searchInput.addEventListener("keyup", (e) => {
