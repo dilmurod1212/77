@@ -51,7 +51,6 @@ orderBtn.addEventListener("click", () => {
 
 function showModal() {
   modal.classList.remove("hidden");
-  window.scrollY(none);
 }
 function closeModal() {
   modal.classList.add("hidden");
@@ -65,6 +64,8 @@ searchBtn.addEventListener("click", () => {
   window.location.assign("./search.html");
 });
 const products = [...new Set(Cards.map((item) => item))];
+
+products.push({ title: "malibu", price: "420 000 000" });
 
 const searchInput = document.querySelector(".search-input");
 searchInput.addEventListener("keyup", (e) => {
@@ -86,12 +87,12 @@ function cardRender(arr) {
   card.innerHTML = arr
     .map((item) => {
       return `
-    <div id="${item.id}" class="card bg-white rounded-lg shadow overflow-hidden cursor-pointer">
+    <div id="${item.id}" class="card bg-white rounded-lg shadow overflow-hidden cursor-pointer ">
     <img src="${item.image}" alt="" class="w-full object-cover" />
     <div class="content p-4">
-      <span class="py-1 px-2 bg-gray-200 rounded-lg text-xs my-4">${item.address}</span>
+      <span class="py-1 px-2 bg-gray-200 rounded-lg  text-xs my-4">${item.address}</span>
       <h5
-        class="my-2 text-xl font-bold tracking-tight text-[#388FF3] max-md:text-base"
+        class="my-2 text-xl font-bold tracking-tight  max-md:text-base text-[#388FF3] line-clamp"
       >
         ${item.title}
       </h5>

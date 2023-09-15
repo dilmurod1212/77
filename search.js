@@ -16,7 +16,7 @@ regions.forEach((region) => {
     );
     if (filtredArr.length) {
       renderFunc(filtredArr);
-      products = filtredArr
+      products = filtredArr;
       cardLength.textContent = `Мы нашли ${filtredArr.length} объявлений`;
     } else {
       renderFunc(products);
@@ -59,7 +59,7 @@ function gridRender(arr) {
     <div class="content p-4">
       <span class="py-1 px-2 bg-gray-200 rounded-lg text-xs my-4">${item.address}</span>
       <h5
-        class="my-2 text-xl font-bold tracking-tight text-[#388FF3] max-md:text-base"
+        class="my-2 text-xl font-bold tracking-tight text-[#388FF3] max-md:text-base line-clamp"
       >
         ${item.title}
       </h5>
@@ -118,7 +118,7 @@ function listRender(arr) {
             >${item.address}</span
           >
           <h5
-            class="my-1 text-xl font-bold tracking-tight text-[#388FF3] max-md:text-base"
+            class="my-1 text-xl font-bold tracking-tight text-[#388FF3] max-md:text-base line-clamp"
           >
             ${item.title}
           </h5>

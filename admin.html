@@ -119,83 +119,85 @@
     <section class="my-8">
       <div class="containerr">
         <div class="grid grid-cols-5 justify-between gap-4 max-md:grid-cols-1">
-          <div class="product col-span-4 max-md:col-span-5 rounded-lg">
-            <div class="card"></div>
-            <div class="descr bg-white p-4 mt-4 rounded-lg">
-              <h3 class="text-3xl font-bold">Описание</h3>
-              <p class="max-md:text-md">
-                Мультистайлер Dyson Airwrap Complete Long в цветe Vinca blue и
-                Rose Бесплатная доставка по ТАШКЕНТУ!!! 100% оригинал С новыми
-                цилиндрами для завивки и волнения в обоих направлениях, щетками
-                для контроля и придания формы, а также многофункциональной
-                сушилкой для разглаживания Coanda для сушки,разглаживания и
-                сокрытия разлетающихся волос 3 В комплектацию входят 30-мм
-                цилиндрические насадки Airwrap для завивки, 40-мм цилиндрические
-                насадки Airwrap для завивки <br />
-                <br />
-                Круглая щетка для создания объема, Мягкая щетка для выпрямления,
-                Жесткая щетка для выпрямление Особенности фена В комплекте Чехол
-                для хранения Термостойкий коврик Щетка для очистки Для длинных
-                до груди или более длинных волос. Пoдxoдит для разных типoв
-                вoлoc. <br />
-                <br />
-                Сoздaние лoконoв и волн. Pазглаживaниe. Высушивaние вoлос. Без
-                экстpeмальныx тeмперaтур. В последней версии 2022 Года появились
-                новые насадки, такие как: - обновлённый цилиндр для завивки,
-                предусматривающий поток воздуха в двух направлениях, то есть
-                больше не нужно переставлять насадки. По вопросам пишите в
-                телеграм на номер
-              </p>
+          <div
+            class="product col-span-1 max-md:col-span-5 rounded-md bg-white p-3 h-auto"
+          >
+            <h2 class="text-xl font-bold">Фильтр</h2>
+            <div class="dropdown my-2">
+              <div class="select bg-white border border-[#eaedeo]">
+                <div class="flex items-center gap-1">
+                  <span class="selected">Все</span>
+                </div>
+                <div class="caret">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </div>
+              <ul class="menu region-filter">
+                <li class="flex items-center gap-1" data-address="hammasi">
+                  Все
+                </li>
+                <li class="flex items-center gap-1" data-address="toshkent">
+                  г. Ташкент
+                </li>
+                <li class="flex items-center gap-1" data-address="andijon">
+                  Андижанская область
+                </li>
+                <li class="flex items-center gap-1" data-address="samarqand">
+                  Самаркандская область
+                </li>
+                <li class="flex items-center gap-1" data-address="qashqadaryo">
+                  Кашкадарьинская область
+                </li>
+                <li class="flex items-center gap-1" data-address="jizzah">
+                  Джизакская область
+                </li>
+              </ul>
+            </div>
+            <div class="checkbox-group">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" id="par" class="cursor-pointer" />
+                <label for="par" class="cursor-pointer">Парфюмерия</label>
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" id="hair" class="cursor-pointer" />
+                <label for="hair" class="cursor-pointer">Волосы</label>
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" id="face" class="cursor-pointer" />
+                <label for="face" class="cursor-pointer">Лицо</label>
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" id="vanna" class="cursor-pointer" />
+                <label for="vanna" class="cursor-pointer">Тело и ванна</label>
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" id="decorate" class="cursor-pointer" />
+                <label for="decorate" class="cursor-pointer">Макияж</label>
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" id="male" class="cursor-pointer" />
+                <label for="male" class="cursor-pointer">Мужчинам</label>
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" id="female" class="cursor-pointer" />
+                <label for="female" class="cursor-pointer">Женщинам</label>
+              </div>
             </div>
           </div>
-          <div class="col-span-1 max-md:col-span-5">
-            <div class="p-2 bg-white rounded-md">
-              <div class="flex gap-2">
-                <div class="w-10 h-10 rounded-lg overflow-hidden">
-                  <img
-                    src="https://picsum.photos/200/300"
-                    alt="admin"
-                    class="w-full"
-                  />
-                </div>
-                <div class="flex flex-col">
-                  <h2 class="font-bold text-[14px]">Малика Абдурахимова</h2>
-                  <p class="text-xs">ID: 1326547</p>
-                </div>
-              </div>
-              <div class="max-md:flex justify-between items-center">
-                <a href="tel:+998 71 200 70 07" class="block my-2"
-                  >+998 71 200 70 07</a
-                >
-                <button
-                  class="p-2 w-full max-md:w-auto rounded-md bg-[#EAEDF0]"
-                >
-                  Все объявления
-                </button>
+          <div class="col-span-4 max-md:col-span-5">
+            <div class="flex items-center justify-between">
+              <h2 class="font-bold text-2xl">Результаты поиска</h2>
+              <div class="flex gap-3 text-xl icon-group">
+                <i class="fa-solid fa-list list-icon cursor-pointer"></i>
+                <i
+                  class="fa-solid fa-table-cells-large grid-icon cursor-pointer active"
+                ></i>
               </div>
             </div>
-            <div class="p-2 bg-white rounded-md mt-4">
-              <h2 class="font-bold text-base max-md:text-xl">Местоположение</h2>
-              <p class="text-md flex gap-1 my-2 items-baseline">
-                <i class="fas fa-location-dot"></i
-                ><span>г.Ташкент, ул.Олмачи 1-й проезд 13 дом</span>
-              </p>
-              <div class="w-full">
-                <iframe
-                  class="w-full"
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d669.3731149432273!2d69.31472595407409!3d41.319052902457365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suz!2s!4v1694337239796!5m2!1suz!2s"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-                <button
-                  class="bg-[#388FF314] backdrop-opacity-20 p-2 text-center rounded-md w-full mt-2 text-[#388FF3] maps"
-                >
-                  Скачать в галерею
-                </button>
-              </div>
-            </div>
+            <p class="card-length">Мы нашли 156 объявлений</p>
+            <div
+              class="cards grid grid-cols-1 max-md:grid-cols-1 gap-3 my-4"
+            ></div>
           </div>
         </div>
       </div>
@@ -245,6 +247,8 @@
     </footer>
     <script src="dropdown.js"></script>
     <script src="modal.js"></script>
-    <script type="module" src="./product.js"></script>
+    <script type="module" src="search.js"></script>
+    <!-- <script type="module" src="app.js"></script> -->
+    <!-- <script type="module" src="./product.js"></script> -->
   </body>
 </html>

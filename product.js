@@ -1,6 +1,13 @@
 import Cards from "./constants/cards.js";
+const obj = {title:'dima'}
+Cards.push(obj)
+
 const products = Cards;
 const product = document.querySelector(".card");
+// const map = document.querySelector(".maps");
+// map.addEventListener("click", () => {
+//   window.location.assign("https://maps.app.goo.gl/w9GfoBXgB9qR6NdA7");
+// });
 
 function uiRender(id) {
   products.forEach((el) => {
@@ -16,7 +23,7 @@ function uiRender(id) {
         
         
         <h2
-          class="my-2 text-3xl font-bold tracking-tight text-[#388FF3] max-md:text-xl"
+          class="my-2 text-3xl font-bold tracking-tight text-[#388FF3] max-md:text-xl "
         >
         ${el.title}
         </h2>
