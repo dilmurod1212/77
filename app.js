@@ -33,29 +33,7 @@ categoryItem.forEach((item) => {
   });
 });
 // modal
-const login = document.querySelector(".login");
-const modal = document.querySelector(".modal");
-const closeBtn = document.querySelector(".fa-close");
-const overlay = document.querySelector(".overlay");
-const orderBtn = document.querySelector(".order-btn");
-const logModal = document.querySelector(".modal-content");
-const orderModal = document.querySelector(".modal-order");
-
-login.addEventListener("click", showModal);
-closeBtn.addEventListener("click", closeModal);
-overlay.addEventListener("click", closeModal);
-// orderBtn.addEventListener("click", () => {
-//   logModal.classList.add("hidden");
-//   orderModal.classList.remove("hidden");
-// });
-
-function showModal() {
-  modal.classList.remove("hidden");
-}
-function closeModal() {
-  modal.classList.add("hidden");
-}
-
+// 
 // dropdown
 
 // search panel

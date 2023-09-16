@@ -25,21 +25,27 @@ regions.forEach((region) => {
   });
 });
 
-listIcon.addEventListener("click", () => {
-  gridIcon.classList.remove("active");
-  listIcon.classList.add("active");
-  listRender(products);
+if (listIcon) {
+  listIcon.addEventListener("click", () => {
+    gridIcon.classList.remove("active");
+    listIcon.classList.add("active");
+    listRender(products);
 
-  console.log("list click");
-});
-gridIcon.addEventListener("click", () => {
-  gridIcon.classList.add("active");
-  listIcon.classList.remove("active");
-  console.log("grid click");
+    console.log("list click");
+  });
+}
+if (gridIcon) {
+  gridIcon.addEventListener("click", () => {
+    gridIcon.classList.add("active");
+    listIcon.classList.remove("active");
+    console.log("grid click");
+    gridRender(products);
+  });
+} else {
   gridRender(products);
-});
+}
 function renderFunc(products) {
-  if (listIcon.classList.contains("active")) {
+  if (listIcon && listIcon.classList.contains("active")) {
     listRender(products);
   } else {
     gridRender(products);
@@ -100,7 +106,7 @@ function listRender(arr) {
       class="card bg-white rounded-lg shadow cursor-pointer grid grid-cols-7 overflow-hidden "
     >
         
-        <div class="w-full  col-span-2 bg-red-400">
+        <div class="w-full  col-span-2 ">
         <img
         src="${item.image}"
         alt=""

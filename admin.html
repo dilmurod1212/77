@@ -15,7 +15,6 @@
     <title>Document</title>
   </head>
   <body>
-    
     <header class="header bg-white">
       <div class="containerr">
         <div
@@ -65,80 +64,46 @@
     <section class="my-8">
       <div class="containerr">
         <div class="grid grid-cols-5 justify-between gap-4 max-md:grid-cols-1">
-          <div
-            class="product col-span-1 max-md:col-span-5 rounded-md bg-white p-3 h-auto"
-          >
-            <h2 class="text-xl font-bold">Фильтр</h2>
-            <div class="dropdown my-2">
-              <div class="select bg-white border border-[#eaedeo]">
-                <div class="flex items-center gap-1">
-                  <span class="selected">Все</span>
+          <div class="col-span-1 max-md:col-span-5">
+            <div class="p-2 bg-white rounded-md flex flex-col">
+              <div class="flex gap-2 items-center my-2">
+                <div
+                  class="w-10 h-10 rounded-full overflow-hidden shadow-md shadow-gray-500"
+                >
+                  <img
+                    src="https://picsum.photos/200/300"
+                    alt="admin"
+                    class="w-full"
+                  />
                 </div>
-                <div class="caret">
-                  <i class="fa-solid fa-angle-right"></i>
-                </div>
+                <h2 class="font-bold text-[14px]">Малика Абдурахимова</h2>
               </div>
-              <ul class="menu region-filter">
-                <li class="flex items-center gap-1" data-address="hammasi">
-                  Все
-                </li>
-                <li class="flex items-center gap-1" data-address="toshkent">
-                  г. Ташкент
-                </li>
-                <li class="flex items-center gap-1" data-address="andijon">
-                  Андижанская область
-                </li>
-                <li class="flex items-center gap-1" data-address="samarqand">
-                  Самаркандская область
-                </li>
-                <li class="flex items-center gap-1" data-address="qashqadaryo">
-                  Кашкадарьинская область
-                </li>
-                <li class="flex items-center gap-1" data-address="jizzah">
-                  Джизакская область
-                </li>
-              </ul>
-            </div>
-            <div class="checkbox-group">
-              <div class="flex items-center gap-2">
-                <input type="checkbox" id="par" class="cursor-pointer" />
-                <label for="par" class="cursor-pointer">Парфюмерия</label>
-              </div>
-              <div class="flex items-center gap-2">
-                <input type="checkbox" id="hair" class="cursor-pointer" />
-                <label for="hair" class="cursor-pointer">Волосы</label>
-              </div>
-              <div class="flex items-center gap-2">
-                <input type="checkbox" id="face" class="cursor-pointer" />
-                <label for="face" class="cursor-pointer">Лицо</label>
-              </div>
-              <div class="flex items-center gap-2">
-                <input type="checkbox" id="vanna" class="cursor-pointer" />
-                <label for="vanna" class="cursor-pointer">Тело и ванна</label>
-              </div>
-              <div class="flex items-center gap-2">
-                <input type="checkbox" id="decorate" class="cursor-pointer" />
-                <label for="decorate" class="cursor-pointer">Макияж</label>
-              </div>
-              <div class="flex items-center gap-2">
-                <input type="checkbox" id="male" class="cursor-pointer" />
-                <label for="male" class="cursor-pointer">Мужчинам</label>
-              </div>
-              <div class="flex items-center gap-2">
-                <input type="checkbox" id="female" class="cursor-pointer" />
-                <label for="female" class="cursor-pointer">Женщинам</label>
-              </div>
+              <button
+                class="p-2 w-full max-md:w-auto rounded-md bg-white shadow-sm shadow-slate-400 transition-all hover:shadow-md hover:shadow-slate-500"
+              >
+                Мои объявления
+              </button>
+              <button
+                class="p-2 mt-2 w-full max-md:w-auto rounded-md bg-[#EAEDF0] shadow-sm shadow-slate-400 transition-all hover:shadow-md hover:shadow-slate-500"
+              >
+                Персональные данные
+              </button>
             </div>
           </div>
           <div class="col-span-4 max-md:col-span-5">
             <div class="flex items-center justify-between">
-              <h2 class="font-bold text-2xl">Результаты поиска</h2>
-              <div class="flex gap-3 text-xl icon-group">
+              <h2 class="font-bold text-2xl max-md:text-xl">Мои объявления</h2>
+              <button
+                class="p-2 mt-2 text-white max-md:text-sm rounded-md bg-[#388FF3] shadow-sm shadow-slate-400 transition-all hover:shadow-md hover:shadow-slate-500"
+              >
+                Создать объявление <i class="fas fa-plus"></i>
+              </button>
+              <!-- <div class="flex gap-3 text-xl icon-group">
                 <i class="fa-solid fa-list list-icon cursor-pointer"></i>
                 <i
                   class="fa-solid fa-table-cells-large grid-icon cursor-pointer active"
                 ></i>
-              </div>
+              </div> -->
             </div>
             <p class="card-length">Мы нашли 156 объявлений</p>
             <div
