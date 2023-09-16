@@ -35,7 +35,6 @@ form.addEventListener("submit", (e) => {
     .catch((err) => console.log(err));
 });
 
-
 async function getData(data) {
   console.log(data);
 
@@ -62,3 +61,5 @@ function showModal() {
 function closeModal() {
   modal.classList.add("hidden");
 }
+
+export { closeModal };
